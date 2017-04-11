@@ -1,7 +1,0 @@
-{
-  "name" : "${name}",
-  "gender" : "${gender}",
-  "age" : "${age}",
-  "job" : "${job}",
-  "status" : "divorced"
-}
