@@ -1,23 +1,30 @@
-# lazadaint
-Code for Laza API testing project
+# Build a fake API with JSON Server and API Testing with Jmeter
 
 Here are the details to run the project:
 
 1 . Setup the server:
 
 * Requirements:
- - NodeJS is installed.
- - Json-server is installed.
- - Eclipse is installed.
+ - Check if NodeJS exists with command line : node -v. If not, please install it
+ - Install JSon-Server with command line : install -g json-server
+ - Check if JSon-Server is installed by command line : json-server
+ - Install JDK and JMeter
  
-* Optional:
-- The server could be different. Change the server information in server.properties.
-- You could be asked to change the path of data files. Change the path of datas file inside data.properties.
+2. Explanation :
+ - JSon-Server works with only object-oriented syntax. That means you should have a JSON file like : 
+   {
+    “objects” :
+      [
+        {object1},
+        {object2}
+      ]
+   }
+To check if your JSON file is ok, go to this link : localhost:3000/objects. If everything is ok, you should see your API available.   
  
-* Setup:
-- Open the command line.
-- Run this following command line : json-server --watch "location/of/file/json".
-  -- In this case, name of json file is db.json, which is located inside server folder.
-  
-2. Run the test:
-- Click on the the testng.xml file and Run as > TestNg Suite.
+3. Run the test:
+- Open JMeter and browse to the file with extension = .jmx
+- Click run to see the result
+
+You also could browse to this link : http://www.testing.vn/jmeter-tai-lieu-huong-dan-build-api-bang-json-server-va-test-api-su-dung-jmeter/
+
+Happy testing !
