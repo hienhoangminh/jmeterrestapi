@@ -22,6 +22,7 @@ Here are the details to run the project:
 To check if your JSON file is ok, go to this link : localhost:3000/objects. If everything is ok, you should see your API available.   
  
 3. Run the test:
+- Start the API by launching the following command line : json-server --watch "path/to/file.json"
 - Open JMeter and browse to the file with extension = .jmx
 - Click run to see the result
 
